@@ -29,12 +29,6 @@ jobs:
           role-to-assume: arn:aws:iam::963611518741:role/GitHubActionsOIDCRole
           aws-region: us-east-1
 
-      - name: Configure AWS Credentials for tfstate
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::963611518741:role/GithubActionsTFStateOIDCRole
-          aws-region: us-east-1
-
       - name: Set AWS Credentials
         run: echo "AWS credentials set"
         env:

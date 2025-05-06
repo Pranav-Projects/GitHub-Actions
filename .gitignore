@@ -1,0 +1,16 @@
+# Ignore Terraform state, lock, and local dirs
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Local env files
+**/.env*
+
+# Local AWS credentials
+local/aws/credentials
+
+# System / Editor junk
+.DS_Store
+.vscode/
+.idea/
